@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (daysLeft < 0) {
                 resultDiv.textContent = "It looks like you've already surpassed the average lifespan.";
             } else {
-                resultDiv.textContent = `You have approximately ${daysLeft.toLocaleString()} days left based on an average lifespan of 30,000 days.`;
+                resultDiv.textContent = `You have approximately ${daysLeft.toLocaleString()} days left based on an average lifespan of 30,000 days. Make sure you make every one of those days count. This is just an estimate, and you could live a lot longer or a lot shorter depending on circumstances.`;
             }
         });
 
@@ -39,3 +39,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
     main();
 });
+
