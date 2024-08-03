@@ -1,60 +1,46 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(135deg, #2e2e2e 25%, #1a1a1a 100%);
-    color: #fff;
-}
-
-.container {
-    background-color: #1a1a1a;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
     text-align: center;
-    border: 2px solid #4b0082;
+    padding: 50px;
+    overflow: hidden;
+    position: relative;
 }
 
 h1 {
-    color: #ff00ff;
-    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+    color: #ff9800;
 }
 
-label {
-    font-size: 1.2em;
-    color: #00ced1;
-}
-
-input[type="number"] {
+input, button {
     padding: 10px;
-    margin-top: 10px;
-    width: calc(100% - 22px);
-    border: 1px solid #4b0082;
-    border-radius: 5px;
-    background-color: #2e2e2e;
-    color: #fff;
-}
-
-button {
-    padding: 10px 20px;
-    margin-top: 10px;
-    border: none;
-    background-color: #4b0082;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #800080;
+    margin: 10px;
+    font-size: 16px;
 }
 
 #result {
     margin-top: 20px;
-    font-size: 1.4em;
-    color: #00ced1;
-    text-shadow: 0 0 10px #00ced1;
+    font-size: 18px;
+    color: #ff9800;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+}
+
+.clock {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('clock.png');
+    background-size: cover;
+    animation: float 5s infinite ease-in-out;
+    opacity: 0.5;
+}
+
+@keyframes float {
+    0% { transform: translateY(0) translateX(0); }
+    50% { transform: translateY(-20px) translateX(20px); }
+    100% { transform: translateY(0) translateX(0); }
 }
