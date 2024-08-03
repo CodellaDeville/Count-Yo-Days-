@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lifespan Calculator</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Count Yo Days</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Remaining Days Calculator</h1>
-        <form id="ageForm">
-            <label for="age">Enter your age:</label>
-            <input type="number" id="age" name="age" required>
-            <button type="submit">Calculate</button>
-        </form>
+        <h1>Welcome to Count Yo Days</h1>
+        <p>Please enter your age in years:</p>
+        <input type="number" id="ageInput" placeholder="Enter your age">
+        <button id="calculateButton">Calculate Days Left</button>
         <div id="result"></div>
     </div>
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="script.js"></script>
 </body>
 </html>
+
